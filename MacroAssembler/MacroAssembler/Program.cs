@@ -34,7 +34,14 @@ namespace MacroAssembler
                     string[] vars = codeLines[i].Substring(4).Replace(';', ' ').Split(',');
                     foreach (var x in vars)
                     {
-                        Console.WriteLine("INTEGER   | " + "4 Bytes | " + (address += 4).ToString() + "      | " + x.Trim());
+                        if (x.Contains("="))
+                        {
+                            Console.WriteLine("INTEGER   | " + "4 Bytes | " + (address += 4).ToString() + "      | " + x.Remove(x.IndexOf('=')).Trim());
+                        }
+                        else
+                        {
+                            Console.WriteLine("INTEGER   | " + "4 Bytes | " + (address += 4).ToString() + "      | " + x.Trim());
+                        }
                     }
                 }
                 else if (codeLines[i].Substring(0, 5).Contains("char"))
@@ -42,7 +49,14 @@ namespace MacroAssembler
                     string[] vars = codeLines[i].Substring(5).Replace(';', ' ').Split(',');
                     foreach (var x in vars)
                     {
-                        Console.WriteLine("CHAR      | " + "1 Bytes | " + (address += 1).ToString() + "      | " + x.Trim());
+                        if (x.Contains("="))
+                        {
+                            Console.WriteLine("CHAR      | " + "1 Bytes | " + (address += 1).ToString() + "      | " + x.Remove(x.IndexOf('=')).Trim());
+                        }
+                        else
+                        {
+                            Console.WriteLine("CHAR      | " + "1 Bytes | " + (address += 1).ToString() + "      | " + x.Trim());
+                        }
                     }
                 }
                 else if (codeLines[i].Substring(0, 7).Contains("float"))
@@ -50,7 +64,14 @@ namespace MacroAssembler
                     string[] vars = codeLines[i].Substring(6).Replace(';', ' ').Split(',');
                     foreach (var x in vars)
                     {
-                        Console.WriteLine("FLOAT     | " + "4 Bytes | " + (address += 4).ToString() + "      | " + x.Trim());
+                        if (x.Contains("="))
+                        {
+                            Console.WriteLine("FLOAT     | " + "4 Bytes | " + (address += 4).ToString() + "      | " + x.Remove(x.IndexOf('=')).Trim());
+                        }
+                        else
+                        {
+                            Console.WriteLine("FLOAT     | " + "4 Bytes | " + (address += 4).ToString() + "      | " + x.Trim());
+                        }
                     }
                 }
                 else if (codeLines[i].Substring(0, 7).Contains("double"))
@@ -58,7 +79,14 @@ namespace MacroAssembler
                     string[] vars = codeLines[i].Substring(7).Replace(';', ' ').Split(',');
                     foreach (var x in vars)
                     {
-                        Console.WriteLine("DOUBLE    | " + "8 Bytes | " + (address += 8).ToString() + "      | " + x.Trim());
+                        if (x.Contains("="))
+                        {
+                            Console.WriteLine("DOUBLE    | " + "8 Bytes | " + (address += 8).ToString() + "      | " + x.Remove(x.IndexOf('=')).Trim());
+                        }
+                        else
+                        {
+                            Console.WriteLine("DOUBLE    | " + "8 Bytes | " + (address += 8).ToString() + "      | " + x.Trim());
+                        }
                     }
                 }
                 i++;
