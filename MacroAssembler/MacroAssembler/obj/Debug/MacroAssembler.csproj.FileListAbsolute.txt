@@ -1,0 +1,6 @@
+C:\Users\abhimanbhau\Documents\GitHub\SystemsProgrammingLab\MacroAssembler\MacroAssembler\bin\Debug\MacroAssembler.exe.config
+C:\Users\abhimanbhau\Documents\GitHub\SystemsProgrammingLab\MacroAssembler\MacroAssembler\bin\Debug\MacroAssembler.exe
+C:\Users\abhimanbhau\Documents\GitHub\SystemsProgrammingLab\MacroAssembler\MacroAssembler\bin\Debug\MacroAssembler.pdb
+C:\Users\abhimanbhau\Documents\GitHub\SystemsProgrammingLab\MacroAssembler\MacroAssembler\obj\Debug\MacroAssembler.csprojResolveAssemblyReference.cache
+C:\Users\abhimanbhau\Documents\GitHub\SystemsProgrammingLab\MacroAssembler\MacroAssembler\obj\Debug\MacroAssembler.exe
+C:\Users\abhimanbhau\Documents\GitHub\SystemsProgrammingLab\MacroAssembler\MacroAssembler\obj\Debug\MacroAssembler.pdb
